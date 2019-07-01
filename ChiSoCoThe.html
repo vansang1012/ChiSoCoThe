@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IBM</title>
+</head>
+<body>
+<h3 style="text-align: center;font-weight: bold"> IBM</h3>
+Cân Nặng :<input type="text" placeholder="Cân Nặng" id="weight"/>
+Chiều Cao:<input type="text" placeholder="Chiều Cao" id="height"/>
+<button onclick="xuly()" >IBM</button>
+<script>
+    function xuly() {
+        let weight=parseFloat((document.getElementById("weight")).value);
+        let height=parseFloat((document.getElementById("height")).value);
+        let ibm=weight/(height*height);
+        if(ibm<18.5){
+            alert("Under Weight");
+        }else if(ibm<25){
+            alert("Normal");
+        }else  if(ibm<30){
+            alert("Over Weight");
+        }else{
+            alert("Obese");
+        }
+
+    }
+</script>
+</body>
+</html>
